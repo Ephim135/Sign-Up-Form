@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+    max-width: 100vw;
+    height: 100vh;
+    background-color: rgb(31, 28, 28);
+}
+
+@font-face {
+    font-family: OdinFont;
+    src: url("/Font/Norse-Bold.otf");
+  }
+  
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+}
+
+.hero {
+    background-image: url("/Images/Palms.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    align-items: center;
+    display: grid;
+}
+
+.hero > div {
+    background-color: rgba(0, 0, 0, 0.595);
+    color:white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    margin-top: -15rem;
+}
+
+.hero img {
+    opacity: 1;
+    height: 8rem;
+    font-size: 5rem;
+    justify-self: end;
+}
+
+.hero p {
+    font-size: 8rem;
+    font-family: OdinFont;
+    right: 20%;
+    margin: 1rem;
+    opacity: 1;
+    justify-self: start;
+}
+
+#credit {
+    font-family: system-ui;
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    color: black;
+    font-size: 1.5rem;
+    margin: 0px;
+}
+.form-container {
+    background-color: rgb(122, 163, 182);
+}
+
+.form-container {
+    padding: 4rem;
+    padding-top: 8rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-right: 10rem;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 0rem 2rem;
+    border-radius: 10px;
+    border-color: grey;
+    background-color: rgb(147, 176, 189);
+
+}
+
+legend {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#create-account {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(80, 80, 154);
+}
+
+#create-account {
+    background-color: rgb(96, 96, 151)
+}
+
+label {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    max-width: 25rem;
+    background-color: rgb(122, 163, 182);
+    padding: 0.5rem;
+}
+
+input:invalid {
+    border: 2px solid red;
+  }
+
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+
+input:valid {
+    border: 2px solid green;
+}
